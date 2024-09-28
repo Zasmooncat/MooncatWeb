@@ -1,32 +1,27 @@
-
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
 
 
-body{
+body {
 
-    background-color: rgb(0, 0, 0);
-    font-family: "Mukta", sans-serif;
-    font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
   font-weight: 500;
   font-style: normal;
   list-style-type: none;
   color: white;
-  
 
-  
 
-    
+
+
+
 }
 
 .redes {
-  justify-content: center; display: flex;
+  justify-content: center;
+  display: flex;
   column-gap: 20px;
   font-size: 30px;
   margin: 20px;
@@ -39,18 +34,19 @@ body{
 
 .video {
 
-  
-  
-  
-  
+
+
+
+
   transition: transform 0.4ms ease-in, filter 0.4s ease-out;
 
 }
 
 .video:active {
-  transform: scale(0.6); /* Reduce el tamaño al hacer click */
+  transform: scale(0.6);
+  /* Reduce el tamaño al hacer click */
   filter: opacity(50%);
-  
+
 }
 
 video:hover {
@@ -74,8 +70,8 @@ video:hover {
 }
 
 
-h1{
-  
+h1 {
+
   margin: 30px;
 }
 
@@ -87,18 +83,21 @@ h1{
   min-width: 100%;
   min-height: 100%;
   opacity: 15%;
-  z-index: -1; /* Envía el video detrás del contenido del div */
-  }
-  
+  z-index: -1;
+  /* Envía el video detrás del contenido del div */
+
+}
 
 
-  
+
+
 
 
 .live {
   position: relative;
   width: 100%;
-  height: 100%; /* Ajusta la altura del contenedor según sea necesario */
+  height: 100%;
+  /* Ajusta la altura del contenedor según sea necesario */
   overflow: hidden;
 }
 
@@ -114,13 +113,13 @@ h1{
   overflow: visible;
 }
 
-h6{
-  color:rgb(249, 182, 223);
+h6 {
+  color: rgb(249, 182, 223);
 }
 
 .date {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -133,42 +132,52 @@ h3 {
 /* Fondo negro en la barra de navegación */
 .bg-body-black {
   background-color: rgba(0, 0, 0, 0) !important;
-  border:none;
+  border: none;
 }
 
 /* Estilos de los enlaces */
 .nav-link {
   position: relative;
   text-decoration: none;
-  color: white; /* Mantiene el texto de los enlaces en blanco */
+  color: white;
+  /* Mantiene el texto de los enlaces en blanco */
 }
 
 /* Línea blanca centrada y separada 3px del texto */
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -3px; /* Separación de 3px del texto */
-  left: 50%; /* Posición inicial centrada */
+  bottom: -3px;
+  /* Separación de 3px del texto */
+  left: 50%;
+  /* Posición inicial centrada */
   width: 0;
-  height: 3px; /* Grosor de la línea */
+  height: 3px;
+  /* Grosor de la línea */
   background-color: white;
   transition: width 0.3s ease, left 0.3s ease;
   transform: translateX(-50%);
-  transform-origin: center; /* La animación comienza y termina en el centro */
+  transform-origin: center;
+  /* La animación comienza y termina en el centro */
 }
 
 /* Efecto hover: expansión del centro a los lados */
 .nav-link:hover::after {
-  width: 100%; /* Se expande al 100% del ancho del enlace */
-  left: 50%; /* Mantiene el centro como punto de partida */
-  transform: translateX(-50%); /* Asegura que la expansión y colapso sucedan desde el centro */
-  transform-origin: center; /* Asegura que el punto de origen sea el centro */
+  width: 100%;
+  /* Se expande al 100% del ancho del enlace */
+  left: 50%;
+  /* Mantiene el centro como punto de partida */
+  transform: translateX(-50%);
+  /* Asegura que la expansión y colapso sucedan desde el centro */
+  transform-origin: center;
+  /* Asegura que el punto de origen sea el centro */
 }
 
 /* Mantener el efecto de contracción del centro a los lados */
 .nav-link:not(:hover)::after {
   width: 0;
-  transform-origin: center; /* Mantiene el punto de contracción en el centro */
+  transform-origin: center;
+  /* Mantiene el punto de contracción en el centro */
 }
 
 
@@ -213,12 +222,12 @@ h3 {
   padding-top: 100px;
 }
 
-.music{
+.music {
   padding-top: 200px;
 }
 
 
-.copyright{
+.copyright {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
@@ -230,9 +239,9 @@ h3 {
 /*MUSIC PLAYER*/
 
 
-.music-player{
+.music-player {
 
-  padding-bottom:100px ;
+  padding-bottom: 100px;
 }
 
 
@@ -242,14 +251,14 @@ h3 {
 }
 
 .controls {
-  
+
   flex-direction: column;
   align-items: center;
 }
 
 #play-pause {
   background-color: transparent;
- 
+
   color: white;
   padding: 10px 20px;
   cursor: pointer;
@@ -266,18 +275,70 @@ h3 {
 
 .progress-container {
   width: 100%;
-  
+
 }
 
 .time-info {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
+
   font-size: 14px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
   background: rgb(255, 255, 255);
   height: 0.5rem;
+}
+
+.form-label {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.header .ms-3 {
+  flex-shrink: 0;
+}
+
+.navbar-toggler-icon {
+  flex-shrink: 0;
+}
+
+.header .ms-3 img {
+  width: 200px;
+  /* Ajusta este valor según el tamaño deseado */
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .header {
+    justify-content: space-between;
+    
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
+.navbar-collapse {
+  width: 100%;
+}
+
+.navbar-toggler {
+  padding: 5px;
 }
