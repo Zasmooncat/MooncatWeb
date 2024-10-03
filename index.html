@@ -66,10 +66,11 @@
 
   <div class="video d-flex justify-content-center">
 
-    <video class="vid col-12 col-md-9" autoplay loop muted src="video/TDMovieOut.11.mp4"></video>
+    <video class="vid col-12 col-md-8" autoplay loop muted src="video/TDMovieOut.11.mp4"></video>
 
   </div>
-  <div class="redes pb-5">
+
+   <div class="redes pb-5">
     <a href="https://open.spotify.com/intl-es/artist/4TpaRMxJFAVHyLunW3UvwW?si=_L9pK1-rRQyI4u8-_4PPog"
       target="_blank"><i class="fab fa-spotify text-white"></i></a>
     <a href="https://soundcloud.com/mooncraft?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
@@ -78,14 +79,16 @@
         class="fab fa-youtube text-white"></i></a>
     <a href="https://www.instagram.com/zasmooncat/?hl=es" target="_blank"><i
         class="fab fa-instagram text-white"></i></a>
-  </div>
+   </div>
 
 
   </div>
-      <!-- REPRODUCTOR -->
 
 
-<!-- 
+  <!-- REPRODUCTOR -->
+
+
+  <!-- 
       <div class="container music-player">
         <div class="song-info">
             <h5 id="song-title">Mooncat - Deep Blues</h5>
@@ -106,7 +109,7 @@
     <script src="script.js"></script> -->
 
 
-      <!-- FECHAS LIVE -->
+  <!-- FECHAS LIVE -->
 
   <div class="live" id="live" style="padding-bottom: 100px ;">
 
@@ -200,17 +203,17 @@
 
   </div>
 
-  <section class="music-section" id="music-section">
+  <section class="music-section">
 
 
-    <div class="container music d-flex justify-content-start border-bottom border-secondary">
+    <div class="container music d-flex justify-content-start ">
 
-      <P>MUSIC</P>
+      <P id="music-section"></P>
     </div>
 
 
 
-                <!-- SLIDER -->
+    <!-- SLIDER -->
 
 
 
@@ -219,9 +222,9 @@
         <div class="carousel-inner">
 
 
-            <!-- IMAGENES SLIDER -->
+          <!-- IMAGENES SLIDER -->
 
-            
+
           <div class="carousel-item active">
             <a href="https://southyard.bandcamp.com/album/konkreet-deep-blues" target='_blank'>
               <img src="https://f4.bcbits.com/img/a2698597319_16.jpg" width="200" heigth="200"
@@ -235,9 +238,9 @@
             </a>
           </div>
           <div class="carousel-item">
-            <a href="https://southyard.bandcamp.com/track/real-connections-feat-harny-roots"
-                  target='_blank'><img src="https://f4.bcbits.com/img/a0567949716_16.jpg" width="200" heigth="200"
-                class="imagen d-block w-100" title="South Yard">
+            <a href="https://southyard.bandcamp.com/track/real-connections-feat-harny-roots" target='_blank'><img
+                src="https://f4.bcbits.com/img/a0567949716_16.jpg" width="200" heigth="200" class="imagen d-block w-100"
+                title="South Yard">
             </a>
           </div>
 
@@ -260,17 +263,17 @@
                 class="imagen d-block w-100" title="South Yard">
             </a>
           </div>
-        
+
           <div class="carousel-item">
             <a href="https://southyard.bandcamp.com/track/revolution" target='_blank'><img
-              src="https://f4.bcbits.com/img/a1930154356_16.jpg" width="200" heigth="200"
-                class="imagen d-block w-100" title="South Yard">
+                src="https://f4.bcbits.com/img/a1930154356_16.jpg" width="200" heigth="200" class="imagen d-block w-100"
+                title="South Yard">
             </a>
           </div>
           <div class="carousel-item">
             <a href="https://southyard.bandcamp.com/track/we-want-no-more" target='_blank'><img
-              src="https://f4.bcbits.com/img/a3952620386_16.jpg" width="200" heigth="200"
-                class="imagen d-block w-100" title="South Yard">
+                src="https://f4.bcbits.com/img/a3952620386_16.jpg" width="200" heigth="200" class="imagen d-block w-100"
+                title="South Yard">
             </a>
           </div>
           <!-- BOTONES SLIDER -->
@@ -294,35 +297,43 @@
 
 
 
-    <!-- CONTACT -->
+  <!-- CONTACT -->
 
-    <section class="container col-12 col-md-7" id="contact" style="padding-top: 100px;">
+  <section class="container col-12 col-md-7" id="contact" style="padding-top: 340px;">
 
-      <div><p class=" mb-5">CONTACT</p></div>
-  
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"><p>Email</p></label>
-        <input type="email" class="form-control bg-body-black text-white border border-secondary" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1 bg-body-black" class="form-label"><p>Message</p></label>
-        <textarea class="form-control bg-body-black text-white border border-secondary" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="d-flex justify-content-end">
+    <div>
+      <p class=" mb-5"></p>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">
+        <p>Email</p>
+      </label>
+      <input type="email" class="form-control bg-body-black text-white border border-secondary"
+        id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1 bg-body-black" class="form-label">
+        <p>Message</p>
+      </label>
+      <textarea class="form-control bg-body-black text-white border border-secondary" id="exampleFormControlTextarea1"
+        rows="3"></textarea>
+    </div>
+    <div class="d-flex justify-content-end">
       <button type="button" class="btn btn-secondary my-3"> Send > </button>
     </div>
-    </section>
+  </section>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
 
-<footer class=" copyright container " style="padding: 60px;">
-
-  
+  <footer class=" copyright container " style="padding: 60px;">
 
 
-</footer>
 
-<p class="copyright d-flex justify-content-end m-3">© Mooncat 2024</p>
+
+  </footer>
+
+  <p class="copyright d-flex justify-content-end m-3">© Mooncat 2024</p>
 
 
 
